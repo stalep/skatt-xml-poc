@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ske:fastsetting:innsamling:saldoRente:v3 saldoRente_v3_0.xsd">
+
+	<leveranse>
+		<kildesystem>Kildesystemet v2.0.5</kildesystem>
+		<oppgavegiver>
+			<organisasjonsnummer>987654321</organisasjonsnummer>
+			<organisasjonsnavn>Eksempelbanken A/S</organisasjonsnavn>
+			<kontaktinformasjon>
+				<navn>Kari Kontakt</navn>
+				<telefonnummer>80080000</telefonnummer>
+				<varselEpostadresse>kontakt@eksempelbanken.no</varselEpostadresse>
+				<varselSmsMobilnummer>43999123</varselSmsMobilnummer>
+			</kontaktinformasjon>
+		</oppgavegiver>
+		<inntektsaar>2013</inntektsaar>
+		<oppgavegiversLeveranseReferanse>2013_1</oppgavegiversLeveranseReferanse>
+		<leveransetype>ordinaer</leveransetype>
+		<presentasjonsnavn>presentasjonsnavn</presentasjonsnavn>
+
+		<!-- eksempel (1): Personlig kontoeier -->
+		<oppgave>
+			<oppgaveeier>
+				<foedselsnummer>25044552222</foedselsnummer>
+				<fornavn/>
+				<etternavn>Ola Nordmann</etternavn>
+				<sektorkode>8500</sektorkode>
+			</oppgaveeier>
+			<kontonummer>20130000100</kontonummer>
+			<skattekontoEgnethet>1</skattekontoEgnethet>
+			<innskudd>50569</innskudd>
+			<renter>
+				<opptjenteRenter>221</opptjenteRenter>
+			</renter>
+			<kontotype>innskuddskontoINok</kontotype>
+		</oppgave>
+
+		<!-- eksempel (2): Virksomhetskontoeier -->
+		<oppgave>
+			<oppgaveeier>
+				<organisasjonsnummer>987012345</organisasjonsnummer>
+				<organisasjonsnavn>Kontoeier AS</organisasjonsnavn>
+			</oppgaveeier>
+			<kontonummer>201300002000</kontonummer>	
+			<skattekontoEgnethet>0</skattekontoEgnethet>
+			<utlaan>0</utlaan>
+			<innskudd>5000</innskudd>
+			<renter>
+				<opptjenteRenter>200</opptjenteRenter>
+				<paaloepteRenter>0</paaloepteRenter>
+			</renter>
+			<kontotype>laanekontoINok</kontotype>
+		</oppgave>
+
+		<!-- eksempel (3): virksomhetskontoeier med disponent -->
+		<oppgave>
+			<oppgaveeier>
+				<organisasjonsnummer>000000000</organisasjonsnummer>
+				<organisasjonsnavn>Forreningen</organisasjonsnavn>
+				<alternativIdentifikator>InterntKundennummer123456</alternativIdentifikator>
+				<sektorkode>7000</sektorkode>
+			</oppgaveeier>
+			<kontonummer>201300003000</kontonummer>
+			<innskudd>4500</innskudd>
+			<renter>
+				<opptjenteRenter>3</opptjenteRenter>
+			</renter>
+			<kontotype>innskuddskontoINok</kontotype>
+			<disponent>
+				<foedselsnummer>17046594876</foedselsnummer>
+				<fornavn>Jens</fornavn>
+				<etternavn>Hansen</etternavn>
+			</disponent>
+		</oppgave>
+
+		<!-- eksempel (4): utenlandsk personlig kontoeier - -->
+		<oppgave>
+			<oppgaveeier>
+				<foedselsnummer>12056700000</foedselsnummer>
+				<fornavn>Jonas</fornavn>
+				<mellomnavn>August</mellomnavn>
+				<etternavn>Svensson</etternavn>
+				<adresse>
+					<landkode>SE</landkode>
+					<adresseStrukturert>
+						<adressenavn>Hasselgatan 27</adressenavn>
+						<postkode>61433</postkode>
+						<byEllerStedsnavn>Söderköping</byEllerStedsnavn>
+					</adresseStrukturert>
+				</adresse>
+				<sektorkode>9000</sektorkode>
+			</oppgaveeier>
+			<kontonummer>20130000400</kontonummer>
+			<utlaan>1000</utlaan>
+			<innskudd>45687</innskudd>
+			<renter>
+				<opptjenteRenter>3</opptjenteRenter>
+				<paaloepteRenter>50</paaloepteRenter>
+			</renter>
+			<kontotype>laanekontoINok</kontotype>
+		</oppgave>
+
+		<!-- eksempel (5): utenlandsk virksomhetskontoeier - -->
+		<oppgave>
+			<oppgaveeier>
+				<organisasjonsnummer>000000000</organisasjonsnummer>
+				<organisasjonsnavn>Garfield Street Auto Ltd</organisasjonsnavn>
+				<internasjonalIdentifikator>
+					<identifikator>900-70-0000</identifikator>
+					<identifikatortype>TIN</identifikatortype>
+					<utstedtAvLand>US</utstedtAvLand>
+				</internasjonalIdentifikator>
+				<adresse>
+					<landkode>US</landkode>
+					<adresseStrukturert>
+						<postboks>POB 65502</postboks>
+						<postkode>85728</postkode>
+						<byEllerStedsnavn>TUCSON AZ</byEllerStedsnavn>
+					</adresseStrukturert>
+				</adresse>
+				<sektorkode>9000</sektorkode>
+			</oppgaveeier>
+			<kontonummer>00501300005000</kontonummer>
+			<utlaan>0</utlaan>
+			<innskudd>50000000</innskudd>
+			<renter>
+				<opptjenteRenter>150000</opptjenteRenter>
+				<paaloepteRenter>0</paaloepteRenter>
+			</renter>
+			<kontotype>innskuddskontoIUtenlandskValuta</kontotype>
+			<valutakode>USD</valutakode>
+      <innskuddIAnnenValuta>6250000</innskuddIAnnenValuta>
+      <renteinntektIAnnenValuta>18750</renteinntektIAnnenValuta>
+		</oppgave>
+
+		<!-- Oppgaveoppsummering -->
+		<oppgaveoppsummering>
+			<antallOppgaver>5</antallOppgaver>
+			<sumInnskudd>50105756</sumInnskudd>
+			<sumUtlaan>1000</sumUtlaan>
+			<sumOpptjenteRenter>150427</sumOpptjenteRenter>
+			<sumPaaloepteRenter>50</sumPaaloepteRenter>
+			<sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+			<sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+			<sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+			<sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+		</oppgaveoppsummering>
+	</leveranse>
+</melding>

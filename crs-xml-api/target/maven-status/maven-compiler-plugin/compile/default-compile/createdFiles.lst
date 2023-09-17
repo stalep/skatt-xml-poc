@@ -1,0 +1,7 @@
+no/skatt/model/Task.class
+no/skatt/model/TaskOwner.class
+no/skatt/model/DeliveryOwner.class
+no/skatt/model/TaskOwnerAddress.class
+no/skatt/model/ContactInfo.class
+no/skatt/model/Delivery.class
+no/skatt/model/InternationalIdentifier.class

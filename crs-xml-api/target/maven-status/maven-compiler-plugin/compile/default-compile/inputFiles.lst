@@ -1,0 +1,7 @@
+/home/stalep/jboss/git/skatt-xml-poc/crs-xml-api/src/main/java/no/skatt/model/ContactInfo.java
+/home/stalep/jboss/git/skatt-xml-poc/crs-xml-api/src/main/java/no/skatt/model/InternationalIdentifier.java
+/home/stalep/jboss/git/skatt-xml-poc/crs-xml-api/src/main/java/no/skatt/model/Task.java
+/home/stalep/jboss/git/skatt-xml-poc/crs-xml-api/src/main/java/no/skatt/model/DeliveryOwner.java
+/home/stalep/jboss/git/skatt-xml-poc/crs-xml-api/src/main/java/no/skatt/model/TaskOwner.java
+/home/stalep/jboss/git/skatt-xml-poc/crs-xml-api/src/main/java/no/skatt/model/Delivery.java
+/home/stalep/jboss/git/skatt-xml-poc/crs-xml-api/src/main/java/no/skatt/model/TaskOwnerAddress.java
